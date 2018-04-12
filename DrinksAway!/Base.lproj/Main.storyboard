@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrinksAway_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n5H-VR-U8W">
+                                <rect key="frame" x="25" y="70" width="325" height="271"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="271" id="uXY-qN-smM"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hQk-EJ-1Zf">
+                                <rect key="frame" x="25" y="356" width="325" height="301"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6C-GA-u1b">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="azo-Da-DC0">
+                                        <rect key="frame" x="0.0" y="62" width="325" height="179"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riC-wY-S91" customClass="RoundButton" customModule="DrinksAway_" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="269" width="325" height="32"/>
+                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Random Drink">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="randomDrinkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DhQ-gF-KyD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="riC-wY-S91" firstAttribute="top" secondItem="azo-Da-DC0" secondAttribute="bottom" constant="28" id="0rK-8K-m8G"/>
+                                    <constraint firstAttribute="trailing" secondItem="riC-wY-S91" secondAttribute="trailing" id="9Df-dJ-Ijv"/>
+                                    <constraint firstItem="azo-Da-DC0" firstAttribute="top" secondItem="I6C-GA-u1b" secondAttribute="bottom" constant="26" id="HFj-6e-6B3"/>
+                                    <constraint firstAttribute="trailing" secondItem="azo-Da-DC0" secondAttribute="trailing" id="IUo-1C-hkJ"/>
+                                    <constraint firstItem="I6C-GA-u1b" firstAttribute="leading" secondItem="hQk-EJ-1Zf" secondAttribute="leading" id="Kur-fU-kpH"/>
+                                    <constraint firstItem="riC-wY-S91" firstAttribute="leading" secondItem="hQk-EJ-1Zf" secondAttribute="leading" id="LgM-Ep-7iw"/>
+                                    <constraint firstAttribute="trailing" secondItem="I6C-GA-u1b" secondAttribute="trailing" id="LyL-S2-bG6"/>
+                                    <constraint firstItem="azo-Da-DC0" firstAttribute="leading" secondItem="hQk-EJ-1Zf" secondAttribute="leading" id="XH2-Gr-Wui"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo8-6i-MnS">
+                                <rect key="frame" x="150" y="22" width="75" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n5H-VR-U8W" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="70" id="2to-af-nxj"/>
+                            <constraint firstItem="hQk-EJ-1Zf" firstAttribute="top" secondItem="n5H-VR-U8W" secondAttribute="bottom" constant="15" id="5oU-ZG-JMX"/>
+                            <constraint firstItem="fo8-6i-MnS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="Ecm-nc-UOK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hQk-EJ-1Zf" secondAttribute="bottom" constant="10" id="F7K-ct-fGn"/>
+                            <constraint firstItem="fo8-6i-MnS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="2" id="Gi4-k6-kI6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hQk-EJ-1Zf" secondAttribute="trailing" constant="25" id="Sb6-5g-QQd"/>
+                            <constraint firstItem="n5H-VR-U8W" firstAttribute="leading" secondItem="hQk-EJ-1Zf" secondAttribute="leading" id="g0f-oa-ZOU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fo8-6i-MnS" secondAttribute="trailing" constant="150" id="gMc-Pa-1eQ"/>
+                            <constraint firstItem="n5H-VR-U8W" firstAttribute="top" secondItem="fo8-6i-MnS" secondAttribute="bottom" constant="5" id="gyy-px-YMR"/>
+                            <constraint firstItem="n5H-VR-U8W" firstAttribute="centerX" secondItem="fo8-6i-MnS" secondAttribute="centerX" id="skF-XV-NO3"/>
+                            <constraint firstItem="n5H-VR-U8W" firstAttribute="trailing" secondItem="hQk-EJ-1Zf" secondAttribute="trailing" id="wH2-QP-83V"/>
+                            <constraint firstItem="hQk-EJ-1Zf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="who-Bj-4ux"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drinkDescriptionText" destination="azo-Da-DC0" id="tQU-Db-4pQ"/>
+                        <outlet property="drinkImageVIew" destination="n5H-VR-U8W" id="Cuc-pY-ueA"/>
+                        <outlet property="drinkNameLabel" destination="I6C-GA-u1b" id="Do5-KT-neF"/>
+                        <outlet property="loadingLabel" destination="fo8-6i-MnS" id="o5Q-1i-EbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
