@@ -1,0 +1,92 @@
+//
+//  RecentsViewController.swift
+//  DrinksAway!
+//
+//  Created by Pranav Bokey on 5/8/18.
+//  Copyright © 2018 Pranav Bokey. All rights reserved.
+//
+
+import UIKit
+import Hero
+
+class RecentsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    private var recents: [Drinks] = []
+    private var drinkToSend: Drinks?
+    // MARK: - Properties
+    
+    @IBOutlet weak var recentsTableView: UITableView!
+    
+    // MARK: - Methods
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return recents.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // TODO: Create a UITableViewCell for each element in recents
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recentDrinkCell", for: indexPath) as! RecentDrinkCell
+        cell.drinkNameLabel.text = recents[indexPath.row].name
+        if let url = URL(string: recents[indexPath.row].image), let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
+            cell.imageView!.image = image
+        }
+        cell.drinkDescriptionLabel.text = recents[indexPath.row].ingredients
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        recentsTableView.deselectRow(at: indexPath, animated: true)
+        let row = indexPath.row
+        let drink = recents[row]
+        drinkToSend = drink
+        self.performSegue(withIdentifier: "detailDrinkView", sender: self)
+    }
+    
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detailDrinkView") {
+            let vc = segue.destination as! DetailDrinkView
+            if let drink = drinkToSend {
+                vc.drink = drink
+            }
+            vc.heroModalAnimationType = .selectBy(presenting: .zoomSlide(direction: .up), dismissing: .zoomSlide(direction: .down))
+        }
+    }
+    
+    func updateRecents(drink obj: Drinks) -> Void {
+        // TODO: ensure that the data being passed in is correct and the same format as others in the array
+        recents.append(obj)
+        // TODO: reload recentsTableView with new drink present at the top
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.recents = recieved
+        recentsTableView.delegate = self
+        recentsTableView.dataSource = self
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}

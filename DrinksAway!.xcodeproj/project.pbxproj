@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E987D00C5447A2F614DEE70 /* Pods_DrinksAway_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 801F880E1D3C8FD417C0B063 /* Pods_DrinksAway_Tests.framework */; };
+		5B241A7220A208DD00316B3D /* RecentDrinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B241A7120A208DD00316B3D /* RecentDrinkCell.swift */; };
 		5B4A29E2207C629000450999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A29E1207C629000450999 /* AppDelegate.swift */; };
 		5B4A29E4207C629000450999 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A29E3207C629000450999 /* ViewController.swift */; };
 		5B4A29E7207C629000450999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4A29E5207C629000450999 /* Main.storyboard */; };
@@ -14,8 +16,14 @@
 		5B4A29EC207C629300450999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4A29EA207C629300450999 /* LaunchScreen.storyboard */; };
 		5B4A29F7207C629300450999 /* DrinksAway_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A29F6207C629300450999 /* DrinksAway_Tests.swift */; };
 		5B4A2A02207C629300450999 /* DrinksAway_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4A2A01207C629300450999 /* DrinksAway_UITests.swift */; };
+		5B5EE35E20A146D900FFBA38 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5EE35D20A146D900FFBA38 /* UIButtonExtension.swift */; };
+		5B5EE36020A14DDA00FFBA38 /* heart-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5EE35F20A14DDA00FFBA38 /* heart-icon.png */; };
 		5B6FB28C207E8FBE00605F4F /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6FB28B207E8FBE00605F4F /* Drinks.swift */; };
+		5BA3DBB4218D6034004E5F11 /* RecentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3DBB3218D6034004E5F11 /* RecentsViewController.swift */; };
+		5BA3DBB6218D6B43004E5F11 /* DetailDrinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3DBB5218D6B43004E5F11 /* DetailDrinkView.swift */; };
 		5BF84460207FC88A00C75538 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8445F207FC88A00C75538 /* RoundButton.swift */; };
+		82AC07B848138D4666755969 /* Pods_DrinksAway_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEA35E3B8463404606A6CBCB /* Pods_DrinksAway_.framework */; };
+		EDB35712E87358A9EDC693F9 /* Pods_DrinksAway_UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4043878A215A90432C9F192A /* Pods_DrinksAway_UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C748EA66CC9EDAADBDB5BDF /* Pods-DrinksAway!UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksAway!UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrinksAway!UITests/Pods-DrinksAway!UITests.release.xcconfig"; sourceTree = "<group>"; };
+		4043878A215A90432C9F192A /* Pods_DrinksAway_UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinksAway_UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B241A7120A208DD00316B3D /* RecentDrinkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentDrinkCell.swift; sourceTree = "<group>"; };
 		5B4A29DE207C629000450999 /* DrinksAway!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DrinksAway!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4A29E1207C629000450999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B4A29E3207C629000450999 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,8 +60,19 @@
 		5B4A29FD207C629300450999 /* DrinksAway!UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DrinksAway!UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B4A2A01207C629300450999 /* DrinksAway_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksAway_UITests.swift; sourceTree = "<group>"; };
 		5B4A2A03207C629300450999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B5EE35D20A146D900FFBA38 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		5B5EE35F20A14DDA00FFBA38 /* heart-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "heart-icon.png"; sourceTree = "<group>"; };
 		5B6FB28B207E8FBE00605F4F /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
+		5BA3DBB3218D6034004E5F11 /* RecentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecentsViewController.swift; sourceTree = "<group>"; };
+		5BA3DBB5218D6B43004E5F11 /* DetailDrinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDrinkView.swift; sourceTree = "<group>"; };
 		5BF8445F207FC88A00C75538 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		5F331F21F2E2E2239B97170E /* Pods-DrinksAway!UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksAway!UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrinksAway!UITests/Pods-DrinksAway!UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		801F880E1D3C8FD417C0B063 /* Pods_DrinksAway_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinksAway_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DCD3BA0FBDD191DF5515279 /* Pods-DrinksAway!.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksAway!.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrinksAway!/Pods-DrinksAway!.release.xcconfig"; sourceTree = "<group>"; };
+		90901B3CB646E5BCB84BB084 /* Pods-DrinksAway!Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksAway!Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DrinksAway!Tests/Pods-DrinksAway!Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9F48E082F1179046EB4C9CB4 /* Pods-DrinksAway!.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksAway!.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrinksAway!/Pods-DrinksAway!.debug.xcconfig"; sourceTree = "<group>"; };
+		EEA35E3B8463404606A6CBCB /* Pods_DrinksAway_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DrinksAway_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A956341F12BC7F2BE62247 /* Pods-DrinksAway!Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DrinksAway!Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DrinksAway!Tests/Pods-DrinksAway!Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82AC07B848138D4666755969 /* Pods_DrinksAway_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E987D00C5447A2F614DEE70 /* Pods_DrinksAway_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB35712E87358A9EDC693F9 /* Pods_DrinksAway_UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +110,9 @@
 				5B4A29F5207C629300450999 /* DrinksAway!Tests */,
 				5B4A2A00207C629300450999 /* DrinksAway!UITests */,
 				5B4A29DF207C629000450999 /* Products */,
+				5B5EE36120A14DE000FFBA38 /* images */,
+				91E5DE335F67680E673CDF54 /* Pods */,
+				F26CAC8F2C8AF38057241625 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +129,10 @@
 		5B4A29E0207C629000450999 /* DrinksAway! */ = {
 			isa = PBXGroup;
 			children = (
-				5BF8445F207FC88A00C75538 /* RoundButton.swift */,
+				5BAEFB7E218D4C8C009005FE /* Assets */,
+				5BAEFB7D218D4C80009005FE /* Models */,
+				5BAEFB7C218D4C6E009005FE /* Controllers */,
 				5B4A29E1207C629000450999 /* AppDelegate.swift */,
-				5B4A29E3207C629000450999 /* ViewController.swift */,
-				5B6FB28B207E8FBE00605F4F /* Drinks.swift */,
 				5B4A29E5207C629000450999 /* Main.storyboard */,
 				5B4A29E8207C629300450999 /* Assets.xcassets */,
 				5B4A29EA207C629300450999 /* LaunchScreen.storyboard */,
@@ -131,6 +159,65 @@
 			path = "DrinksAway!UITests";
 			sourceTree = "<group>";
 		};
+		5B5EE36120A14DE000FFBA38 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5B5EE35F20A14DDA00FFBA38 /* heart-icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		5BAEFB7C218D4C6E009005FE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BA3DBB3218D6034004E5F11 /* RecentsViewController.swift */,
+				5B4A29E3207C629000450999 /* ViewController.swift */,
+				5BA3DBB5218D6B43004E5F11 /* DetailDrinkView.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5BAEFB7D218D4C80009005FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B6FB28B207E8FBE00605F4F /* Drinks.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BAEFB7E218D4C8C009005FE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5B5EE35D20A146D900FFBA38 /* UIButtonExtension.swift */,
+				5B241A7120A208DD00316B3D /* RecentDrinkCell.swift */,
+				5BF8445F207FC88A00C75538 /* RoundButton.swift */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		91E5DE335F67680E673CDF54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F48E082F1179046EB4C9CB4 /* Pods-DrinksAway!.debug.xcconfig */,
+				8DCD3BA0FBDD191DF5515279 /* Pods-DrinksAway!.release.xcconfig */,
+				F5A956341F12BC7F2BE62247 /* Pods-DrinksAway!Tests.debug.xcconfig */,
+				90901B3CB646E5BCB84BB084 /* Pods-DrinksAway!Tests.release.xcconfig */,
+				5F331F21F2E2E2239B97170E /* Pods-DrinksAway!UITests.debug.xcconfig */,
+				1C748EA66CC9EDAADBDB5BDF /* Pods-DrinksAway!UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F26CAC8F2C8AF38057241625 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEA35E3B8463404606A6CBCB /* Pods_DrinksAway_.framework */,
+				801F880E1D3C8FD417C0B063 /* Pods_DrinksAway_Tests.framework */,
+				4043878A215A90432C9F192A /* Pods_DrinksAway_UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B4A2A06207C629300450999 /* Build configuration list for PBXNativeTarget "DrinksAway!" */;
 			buildPhases = (
+				D28D6248A5B94D1813A8ED44 /* [CP] Check Pods Manifest.lock */,
 				5B4A29DA207C629000450999 /* Sources */,
 				5B4A29DB207C629000450999 /* Frameworks */,
 				5B4A29DC207C629000450999 /* Resources */,
+				717E62661628A93B9E0F00F0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -155,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B4A2A09207C629300450999 /* Build configuration list for PBXNativeTarget "DrinksAway!Tests" */;
 			buildPhases = (
+				DC35966E4FB7A621CCD9C6EE /* [CP] Check Pods Manifest.lock */,
 				5B4A29EE207C629300450999 /* Sources */,
 				5B4A29EF207C629300450999 /* Frameworks */,
 				5B4A29F0207C629300450999 /* Resources */,
@@ -173,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5B4A2A0C207C629300450999 /* Build configuration list for PBXNativeTarget "DrinksAway!UITests" */;
 			buildPhases = (
+				E247D05935ABB48669F671CF /* [CP] Check Pods Manifest.lock */,
 				5B4A29F9207C629300450999 /* Sources */,
 				5B4A29FA207C629300450999 /* Frameworks */,
 				5B4A29FB207C629300450999 /* Resources */,
@@ -238,6 +329,7 @@
 				5B4A29EC207C629300450999 /* LaunchScreen.storyboard in Resources */,
 				5B4A29E9207C629300450999 /* Assets.xcassets in Resources */,
 				5B4A29E7207C629000450999 /* Main.storyboard in Resources */,
+				5B5EE36020A14DDA00FFBA38 /* heart-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +349,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		717E62661628A93B9E0F00F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DrinksAway!/Pods-DrinksAway!-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DrinksAway!/Pods-DrinksAway!-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28D6248A5B94D1813A8ED44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinksAway!-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC35966E4FB7A621CCD9C6EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinksAway!Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E247D05935ABB48669F671CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DrinksAway!UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5B4A29DA207C629000450999 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5BF84460207FC88A00C75538 /* RoundButton.swift in Sources */,
+				5B5EE35E20A146D900FFBA38 /* UIButtonExtension.swift in Sources */,
 				5B6FB28C207E8FBE00605F4F /* Drinks.swift in Sources */,
+				5B241A7220A208DD00316B3D /* RecentDrinkCell.swift in Sources */,
+				5BA3DBB4218D6034004E5F11 /* RecentsViewController.swift in Sources */,
 				5B4A29E4207C629000450999 /* ViewController.swift in Sources */,
+				5BA3DBB6218D6B43004E5F11 /* DetailDrinkView.swift in Sources */,
 				5B4A29E2207C629000450999 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +607,7 @@
 		};
 		5B4A2A07207C629300450999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F48E082F1179046EB4C9CB4 /* Pods-DrinksAway!.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +626,7 @@
 		};
 		5B4A2A08207C629300450999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DCD3BA0FBDD191DF5515279 /* Pods-DrinksAway!.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -472,6 +645,7 @@
 		};
 		5B4A2A0A207C629300450999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5A956341F12BC7F2BE62247 /* Pods-DrinksAway!Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +667,7 @@
 		};
 		5B4A2A0B207C629300450999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90901B3CB646E5BCB84BB084 /* Pods-DrinksAway!Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +689,7 @@
 		};
 		5B4A2A0D207C629300450999 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F331F21F2E2E2239B97170E /* Pods-DrinksAway!UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +710,7 @@
 		};
 		5B4A2A0E207C629300450999 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C748EA66CC9EDAADBDB5BDF /* Pods-DrinksAway!UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
