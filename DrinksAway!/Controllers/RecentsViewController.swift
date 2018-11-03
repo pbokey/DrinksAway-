@@ -30,11 +30,26 @@ class RecentsViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // TODO: Create a UITableViewCell for each element in recents
         let cell = tableView.dequeueReusableCell(withIdentifier: "recentDrinkCell", for: indexPath) as! RecentDrinkCell
+        
+//        cell.contentView.backgroundColor = UIColor.clear
+//        let whiteRoundedView: UIView = UIView(frame: CGRect(x: 10, y: 8, width: self.view.frame.size.width - 20, height: 120))
+//        whiteRoundedView.layer.backgroundColor = CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [1.0, 1.0, 1.0, 0.9])
+//        whiteRoundedView.layer.masksToBounds = false
+//        whiteRoundedView.layer.cornerRadius = 2.0
+//        whiteRoundedView.layer.shadowOffset = CGSize(width: -1, height: 1)
+//        whiteRoundedView.layer.shadowOpacity = 0.2
+//        cell.contentView.addSubview(whiteRoundedView)
+//        cell.contentView.sendSubview(toBack: whiteRoundedView)
+        
+        
         cell.drinkNameLabel.text = recents[indexPath.row].name
         if let url = URL(string: recents[indexPath.row].image), let data = try? Data(contentsOf: url), let image = UIImage(data: data) {
             cell.imageView!.image = image
         }
         cell.drinkDescriptionLabel.text = recents[indexPath.row].ingredients
+        
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
         return cell
     }
     
