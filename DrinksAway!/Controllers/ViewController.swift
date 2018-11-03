@@ -83,7 +83,7 @@ class ViewController: UIViewController {
 
         }
         
-        drinkNameLabel.text = "Choose a random Drink"
+        drinkNameLabel.text = "Choose a Random Drink"
         drinkDescriptionText.text = ""
         
         
