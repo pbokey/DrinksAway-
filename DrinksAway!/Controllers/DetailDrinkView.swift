@@ -45,15 +45,17 @@ class DetailDrinkView: UIViewController {
     
     @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
         print("recognized gesture")
-        switch sender.state {
-        case .began:
-            hero_dismissViewController()
-        case .changed:
-            let translation = sender.translation(in: nil)
-            let progress = translation.y / 2 / view.bounds.height
-            Hero.shared.update(progress)
-        default:
-            Hero.shared.finish()
+        if (sender.velocity(in: view).y > 0) {
+            switch sender.state {
+            case .began:
+                hero_dismissViewController()
+            case .changed:
+                let translation = sender.translation(in: nil)
+                let progress = translation.y / 2 / view.bounds.height
+                Hero.shared.update(progress)
+            default:
+                Hero.shared.finish()
+            }
         }
     }
     

@@ -85,12 +85,31 @@ class RecentsViewController: UIViewController, UITableViewDataSource, UITableVie
         self.recents = recieved
         recentsTableView.delegate = self
         recentsTableView.dataSource = self
+        view.isUserInteractionEnabled = true
+        let panRecognizer = UIPanGestureRecognizer(target: self, action:#selector(RecentsViewController.handlePan))
+        view.gestureRecognizers = [panRecognizer]
         // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
+        print("recognized gesture")
+        if (sender.velocity(in: view).x > 0) {
+            switch sender.state {
+            case .began:
+                hero_dismissViewController()
+            case .changed:
+                let translation = sender.translation(in: nil)
+                let progress = translation.y / 2 / view.bounds.height
+                Hero.shared.update(progress)
+            default:
+                Hero.shared.finish()
+            }
+        }
     }
     
 

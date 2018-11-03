@@ -128,7 +128,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nB4-gP-P2J">
-                                <rect key="frame" x="0.0" y="25" width="375" height="564"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recentDrinkCell" rowHeight="113" id="ve0-XZ-5cg" customClass="RecentDrinkCell" customModule="DrinksAway_" customModuleProvider="target">
@@ -143,6 +143,9 @@
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GA2-y0-03i">
                                                             <rect key="frame" x="0.0" y="0.0" width="122" height="92.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="122" id="Esk-jS-BFL"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="stq-5t-txd">
                                                             <rect key="frame" x="127" y="0.0" width="244" height="92.5"/>
@@ -194,33 +197,13 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-fB-cSj" customClass="RoundButton" customModule="DrinksAway_" customModuleProvider="target">
-                                <rect key="frame" x="20" y="597" width="335" height="50"/>
-                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="8lU-dR-RJV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <segue destination="Kx0-9V-PUR" kind="unwind" unwindAction="unwindFor:" id="JX7-kL-kdw"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SW0-fB-cSj" firstAttribute="leading" secondItem="9e7-dt-eOr" secondAttribute="leading" constant="20" id="4ct-a7-nnY"/>
-                            <constraint firstItem="9e7-dt-eOr" firstAttribute="trailing" secondItem="SW0-fB-cSj" secondAttribute="trailing" constant="20" id="A55-Mq-xea"/>
-                            <constraint firstItem="9e7-dt-eOr" firstAttribute="bottom" secondItem="SW0-fB-cSj" secondAttribute="bottom" constant="20" id="Bea-so-oG5"/>
-                            <constraint firstItem="nB4-gP-P2J" firstAttribute="leading" secondItem="9e7-dt-eOr" secondAttribute="leading" id="VZf-e2-OK5"/>
-                            <constraint firstItem="SW0-fB-cSj" firstAttribute="top" secondItem="nB4-gP-P2J" secondAttribute="bottom" constant="8" id="WGX-dU-KlH"/>
-                            <constraint firstItem="9e7-dt-eOr" firstAttribute="trailing" secondItem="nB4-gP-P2J" secondAttribute="trailing" id="aJa-7h-Nef"/>
-                            <constraint firstItem="nB4-gP-P2J" firstAttribute="top" secondItem="9e7-dt-eOr" secondAttribute="top" constant="5" id="h7h-bz-gqH"/>
+                            <constraint firstItem="nB4-gP-P2J" firstAttribute="leading" secondItem="9e7-dt-eOr" secondAttribute="leading" id="Adz-sc-Ejd"/>
+                            <constraint firstItem="nB4-gP-P2J" firstAttribute="top" secondItem="9e7-dt-eOr" secondAttribute="top" id="aHd-t9-jTi"/>
+                            <constraint firstItem="nB4-gP-P2J" firstAttribute="trailing" secondItem="9e7-dt-eOr" secondAttribute="trailing" id="hMy-gw-kUw"/>
+                            <constraint firstItem="nB4-gP-P2J" firstAttribute="bottom" secondItem="9e7-dt-eOr" secondAttribute="bottom" id="pVv-g2-0zn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9e7-dt-eOr"/>
                     </view>
@@ -233,7 +216,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9kh-L0-4oH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Kx0-9V-PUR" userLabel="Exit" sceneMemberID="exit"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="JBn-C2-quV">
+                    <connections>
+                        <action selector="handlePan:" destination="qBp-ql-bkc" id="E3g-tc-Kbo"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="876" y="133.5832083958021"/>
         </scene>

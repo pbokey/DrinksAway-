@@ -1,0 +1,6 @@
+framework module Pods_DrinksAway_Tests {
+  umbrella header "Pods-DrinksAway!Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
